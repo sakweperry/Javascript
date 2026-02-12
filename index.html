@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .hidden-conten{
+            display: none;
+        }
+        .hidden-conten.reveal-btn{
+            display: block;
+        }
+    </style>
 </head>
 <body>
     <p id="demo"></p>
@@ -11,13 +19,27 @@
     <h1 id="main-heading">Lorem ipsum  amet.</h1>
     <button type="button", onclick="document.getElementById('main-heading').style.color='red'">
     click me</button>
+      <button onclick="alert('i love perry')">enter</button>
     <ul>
-        <li class="list-items">Lorem,.</li>
+        <li class="list-items">Lorem</li>
         <li class="list-items">dolor.</li>
         <li class="list-items">ipsum</li>
         <li class="list-items">orange</li>
         <li class="list-items">banana</li>
     </ul>
+    <button class="btn1">click me</button>
+    </div>
+
+    <div class="myfirst">
+        <button class="reveal-btn boxes">reveal more</button>
+        <div class="hidden-conten boxes">
+          Lorem ipsum dolor sit amet consectetur.
+          Lorem ipsum dolor sit amet consectetur.
+          Lorem ipsum dolor sit amet consectetur.
+          Lorem ipsum dolor sit amet consectetur.
+          Lorem ipsum dolor sit amet consectetur.
+          Lorem ipsum dolor sit amet consectetur.
+        </div>
     </div>
     <script src="./script.js"></script>
 </body>
